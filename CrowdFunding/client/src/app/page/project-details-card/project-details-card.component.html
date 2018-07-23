@@ -1,0 +1,26 @@
+<!--Card-->
+<div *ngIf="project" class = "row" style="color: white">
+    <div class="col-md-8">
+        <h3>Informacije o projektu</h3>
+        <div>Project: {{project.name}}</div>
+        <div>Description: {{project.description}}</div>
+        <div>Wanted : {{project.wantedPrice}}</div>
+        <div>Paid : {{project.paidPrice}} </div>
+        <div class="progress" style="height: 20px">
+                <div class="progress-bar" role="progressbar" [ngStyle]="{ width: ((project.paidPrice / project.wantedPrice) * 100) + '%'}">
+                </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <form (ngSubmit)="donate()" class="form form-inline">
+                Naslov:
+                <input name="donate" [(ngModel)]="activeProject.paidPrice" type="number" class="form-control"/>
+                <input type="submit" value="donate" class="form-control"/>
+
+        </form>
+       
+    </div>
+    
+
+  </div>
+  

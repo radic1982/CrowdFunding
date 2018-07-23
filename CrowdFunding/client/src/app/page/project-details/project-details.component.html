@@ -1,0 +1,38 @@
+<header class="h-100">
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark intro-fixed-nav" [containerInside]="false">
+    <logo>
+      <a class="logo navbar-brand" href="/home">
+        <strong>Crowd Funding</strong>
+      </a>
+    </logo>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="/add-project">Add Project</a>
+        </li>
+        <li class="nav-item active waves-light" mdbWavesEffect>
+          <a class="nav-link" href="/projects">Projects
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mr-right">
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link">Contact Us</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+  <div class="view intro-2" style="">
+    <div class="full-bg-img">
+      <div class="mask rgba-purple-light flex-center">
+        <div class="text-center">
+          <app-project-details-card></app-project-details-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

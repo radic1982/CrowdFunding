@@ -1,0 +1,81 @@
+<header class="h-100">
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
+    <logo>
+      <a class="logo navbar-brand" href="/home">
+        <strong>Crowd Funding</strong>
+      </a>
+    </logo>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active waves-light" mdbWavesEffect>
+          <a class="nav-link">Add Project
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="/projects">Projects</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mr-right">
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link">Contact Us</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+
+  <div class="view intro-2" style="">
+    <div class="full-bg-img">
+      <div class="mask rgba-purple-light flex-center">
+        <section class="form-elegant mb-0 ">
+          <!--Form without header-->
+          <div class="card rgba-purple-light " style="background-image: url('https://mdbootstrap.com/img/Photos/Others/photo3.jpg');">
+            <div class="text-white rgba-purple-light py-0 px-5 z-depth-4">
+              <!--Header-->
+              <div class="text-center">
+                <h3 class="white-text mb-0 mt-4 font-weight-bold text-uppercase">
+                  <strong>Send</strong>
+                  <a class="green-text font-weight-bold">
+                    <strong> Us</strong>
+                  </a>
+                  <a class="white-text font-weight-bold">
+                    <strong> Project</strong>
+                  </a>
+                </h3>
+              </div>
+
+              <div class="md-form">
+                <input type="text" id="form100" class="form-control">
+                <label for="form100">Your name</label>
+              </div>
+              <div class="md-form">
+                <input type="text" id="form102" class="form-control">
+                <label for="form102">Name of project</label>
+              </div>
+              <div class="md-form">
+                <input type="number" id="form102" class="form-control">
+                <label for="form102">Wanted price</label>
+              </div>
+              <div class="md-form">
+                <textarea type="text" id="form103" class="md-textarea form-control" rows="4"></textarea>
+                <label for="form103">Describe project</label>
+              </div>
+              <!--Grid row-->
+              <div class="row d-flex align-items-center">
+                <!--Grid column-->
+                <div class="text-center col-md-12 mt-3 mb-2">
+                  <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Send</button>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </div>
+          </div>
+          <!--/Form without header-->
+        </section>
+      </div>
+    </div>
+    <!-- /.Main -->
